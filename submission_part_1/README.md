@@ -2,7 +2,7 @@
 
 1. Create a VCL Image "csc512_llvm" which has the LLVM installed 
 
-2. Inside dev_part_1, run the following commands. This command builds your skeleton code
+2. Inside submission_part_1, run the following commands. This command builds your skeleton code
 
 ```bash
 
@@ -128,7 +128,7 @@ foobar
 4. Copy the "foobar" directory available in this repo to the valgrind home directory. 
 
 ```bash
-cp -rf dev_part_1/valgrind_files/foobar <valgrind_home_dir>
+cp -rf submission_part_1/valgrind_files/foobar <valgrind_home_dir>
 ```
 
 5. Re-compile and build the Valgrind directory using below commands
@@ -152,18 +152,18 @@ make install
 7. Here is an example run. I have installed the valgrind at the location "/home/mshaikh2/val_inst". I am using the executable "a.out" for the program test1.c available in the repo. 
 
 ```bash
-/home/mshaikh2/val_inst/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-dev/dev_part_1/a.out
+/home/mshaikh2/val_inst/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-dev/submission_part_1/a.out
 
 ```
 
 8. Below if the output of the Valgring run on the test1.c executable. 
 
 ```
-mshaikh2@vclvm179-45:~/csc512-part1-dev/dev_part_1$ /home/mshaikh2/val_inst/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-dev/dev_part_1/a.out
+mshaikh2@vclvm179-45:~/csc512-part1-dev/submission_part_1$ /home/mshaikh2/val_inst/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-dev/submission_part_1/a.out
 ==63486== Countrind, Profiling tool to count the number of executed instructions
 ==63486== Copyright (C) 2024, and GNU GPL'd, by Mushtaq Shaikh et al.
 ==63486== Using Valgrind-3.25.0.GIT and LibVEX; rerun with -h for copyright info
-==63486== Command: /home/mshaikh2/csc512-part1-dev/dev_part_1/a.out
+==63486== Command: /home/mshaikh2/csc512-part1-dev/submission_part_1/a.out
 ==63486== 
 *funcptr_0x109160
 10
