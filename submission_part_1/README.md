@@ -152,27 +152,26 @@ make install
 7. Here is an example run. I have installed the valgrind at the location "/home/mshaikh2/val_inst". I am using the executable "a.out" for the program test1.c available in the repo. 
 
 ```bash
-/home/mshaikh2/val_inst/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-dev/submission_part_1/a.out
-
+/home/mshaikh2/val_insta/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-submission/submission_part_1/a.out
 ```
 
 8. Below if the output of the Valgring run on the test1.c executable. 
 
 ```
-mshaikh2@vclvm179-45:~/csc512-part1-dev/submission_part_1$ /home/mshaikh2/val_inst/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-dev/submission_part_1/a.out
-==63486== Countrind, Profiling tool to count the number of executed instructions
-==63486== Copyright (C) 2024, and GNU GPL'd, by Mushtaq Shaikh et al.
-==63486== Using Valgrind-3.25.0.GIT and LibVEX; rerun with -h for copyright info
-==63486== Command: /home/mshaikh2/csc512-part1-dev/submission_part_1/a.out
-==63486== 
+mshaikh2@vclvm179-45:~/csc512-part1-submission/submission_part_1$ /home/mshaikh2/val_insta/bin/valgrind --tool=foobar /home/mshaikh2/csc512-part1-submission/submission_part_1/a.out
+==96179== Countrind, Profiling tool to count the number of executed instructions
+==96179== Copyright (C) 2024, and GNU GPL'd, by Mushtaq Shaikh et al.
+==96179== Using Valgrind-3.25.0.GIT and LibVEX; rerun with -h for copyright info
+==96179== Command: /home/mshaikh2/csc512-part1-submission/submission_part_1/a.out
+==96179== 
 *funcptr_0x109160
 10
 br_1
 br_1
 br_1
 br_2
-==63486== 
-==63486== Total number of instructions executed: 162248
+==96179== 
+==96179== Total number of instructions executed: 162564
 ```
 
 # Test Programs
